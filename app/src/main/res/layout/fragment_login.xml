@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#0000FF"
+        android:layout_margin="50dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user" />
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="#aaaaaa"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:padding="15dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="#aaaaaa"
+            android:ems="10"
+            android:minHeight="48dp"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:padding="15dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button8"
+            android:backgroundTint="#5555ff"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5555ff"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="Forgot Password" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#5555ff"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:text="SignUp" />
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</FrameLayout>

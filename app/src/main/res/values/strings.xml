@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FCIS_002</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="roles">
+        <item>Manager</item>
+        <item>Expert</item>
+        <item>Receptionist</item>
+    </string-array>
+
+    <string-array name="branches">
+        <item>Branch 001</item>
+        <item>Branch 002</item>
+        <item>Branch 003</item>
+    </string-array>
+
+    <string-array name="queries">
+        <item>Query 001</item>
+        <item>Query 002</item>
+        <item>Query 003</item>
+    </string-array>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:backgroundTint="#0000ff"
+    android:background="#0000ff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffc"
+        android:outlineSpotShadowColor="#ddccff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:backgroundTint="#ffffff">
+            <TableRow>
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/walkin"
+                    android:backgroundTint="#0000ff"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/appointment"
+                    android:text="." />
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="3"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/matrics"
+                    android:text="." />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#0000ff"
+                    android:text="Walk-ins/ Appointments"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:textSize="15dp"
+                    android:textColor="#0000ff"
+                    android:text="Manage Appointments"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:textSize="15dp"
+                    android:text="Branch Matrics"
+                    android:textColor="#0000ff"
+                    android:textAlignment="center" />
+            </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent">
+
+            <Button
+                android:id="@+id/btnSetBranch"
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                android:backgroundTint="#0000ff"
+                android:textColor="@color/white"
+                android:minWidth="100dp"
+                android:minHeight="70dp"
+                android:text="Manage\nBRANCH" />
+
+            <Button
+                android:id="@+id/btnManageUsers"
+                android:layout_width="94dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:layout_margin="5dp"
+                android:backgroundTint="#0000ff"
+                android:textColor="@color/white"
+                android:minWidth="100dp"
+                android:minHeight="70dp"
+                android:text="Manage\nUsers" />
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:layout_column="3"
+                android:layout_margin="5dp"
+                android:backgroundTint="#0000ff"
+                android:minHeight="70dp"
+                android:text="set\nRECESS" />
+        </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+
+</FrameLayout>

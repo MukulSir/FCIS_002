@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserData">
+    <TableRow>
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_column="1"
+            android:hint="User Name"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtUserName"
+            android:layout_column="2"
+            android:hint="User Name"
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_column="1"
+            android:hint="Password"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_column="2"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtDesignation"
+            android:layout_column="1"
+            android:hint="Designation"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/edtDesignation"
+            android:layout_column="2"
+            android:hint="Designation"
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_column="1"
+            android:text="Delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_column="2"
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+</TableLayout>

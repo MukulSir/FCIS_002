@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000ff"
+    tools:context=".SetLunchTime">
+    <LinearLayout
+        android:id="@+id/ll01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:text="Set Lunch Time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#ffffff"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ask" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:backgroundTint="#1155ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:background="#ffccdd"
+        android:padding="10dp">
+
+
+
+        <TableRow android:baselineAligned="false">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_column="1"
+                android:gravity="right"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Staff : " />
+
+            <Spinner
+                android:id="@+id/spStaff"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="@color/white"
+                android:textColorHint="#aaaaaa"
+                android:layout_column="2"
+                android:textSize="20dp"
+                android:minHeight="48dp"
+                android:autofillHints="staff"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:baselineAligned="false">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:text="Lunch Time : " />
+
+
+            <EditText
+                android:id="@+id/txtLunchTime"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:hint="Lunch Time"
+                android:textSize="20dp"
+                android:inputType="time"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:minHeight="48dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:baselineAligned="false">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="time"
+                android:layout_column="1"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:text="to Time : " />
+
+
+            <EditText
+                android:id="@+id/txtToTime"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:hint="Lunch Time"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:minHeight="48dp" />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:gravity="center_horizontal"
+                android:lines="3"
+                android:maxLines="3"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:lineHeight="20dp"
+                android:layout_column="2"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/btnSetLunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="2"
+                android:textSize="20dp"
+                android:backgroundTint="#0000ff"
+                android:layout_gravity="center"
+                android:text="Submit" />
+        </TableRow>
+    </TableLayout>
+</FrameLayout>

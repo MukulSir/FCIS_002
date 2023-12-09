@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewDashBoard">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="0dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/imgNew"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="start"
+            android:src="@drawable/walkin"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:text="New"
+            />
+
+        <ImageView
+            android:id="@+id/imgAppointment"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/appointment"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:text="New"
+            />
+
+        <ImageView
+            android:id="@+id/imgList"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            android:src="@drawable/edit"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:text="Walkin"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="Fast Check-in System"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:id="@+id/sv1"
+        android:layout_width="fill_parent"
+        android:layout_height="456dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="125dp"
+        android:visibility="visible">
+
+        <GridLayout
+            android:id="@+id/glData"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2" />
+    </ScrollView>
+
+</FrameLayout>

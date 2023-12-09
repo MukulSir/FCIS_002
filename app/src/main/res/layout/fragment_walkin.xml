@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2255ff"
+    tools:context=".Walkin">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@color/black"
+            android:layout_margin="5dp"
+            android:src="@drawable/security"
+            android:contentDescription="@string/app_name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#0000ff"
+            android:text="Walk in"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-30dp"
+        android:padding="0dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtMessage"
+                android:textColor="#ff0000"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_column="2"
+                android:textSize="20dp"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:text="First Name : "
+                android:layout_marginTop="15dp"
+                android:gravity="right"
+                android:textSize="20dp"
+                android:layout_column="1"/>
+            <EditText
+                android:id="@+id/txtFirstName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:hint="First Name"
+                android:layout_column="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Last Name : "
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_column="1"/>
+            <EditText
+                android:id="@+id/txtLastName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:hint="Last Name"
+                android:layout_column="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Phone Number : "
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_column="1"/>
+            <EditText
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:hint="Phone Number"
+                android:layout_column="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Date : "
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_column="1"/>
+            <EditText
+                android:id="@+id/txtDate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:hint="Date"
+                android:layout_column="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:gravity="right"
+                android:text="Time: "
+                android:layout_marginTop="15dp"
+                android:layout_column="1"/>
+            <EditText
+                android:id="@+id/txtTime"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:minHeight="48dp"
+                android:inputType="text"
+                android:hint="Time"
+                android:layout_column="2"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Query For : "
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_column="1"/>
+            <Spinner
+                android:id="@+id/spBranchName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:minHeight="48dp"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Available Staff : "
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_column="1"/>
+            <Spinner
+                android:id="@+id/spStaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:focusable="true"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Note : "
+                android:gravity="right"
+                android:layout_marginTop="15dp"
+                android:layout_column="1"/>
+            <EditText
+                android:id="@+id/txtNote"
+                android:inputType="text"
+                android:layout_width="fill_parent"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/white"
+                android:minHeight="48dp"
+                android:hint="Note"
+                android:lines="5"
+                android:maxLines="5"
+                android:lineHeight="48dp"
+                android:layout_column="2"/>
+        </TableRow>
+
+
+        <TableRow>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:backgroundTint="#0000ff"
+                android:textSize="20dp"
+                android:layout_column="2"
+                />
+        </TableRow>
+    </TableLayout>
+    </LinearLayout>
+</FrameLayout>
